@@ -12,7 +12,7 @@ The goal of this project is to build a robust regression pipeline that accuratel
 ---
 
 ## 📊 Dataset Overview
-The dataset contains **1,338 records** of health insurance beneficiaries with the following features:
+The dataset contains **2,772 records** of health insurance beneficiaries with the following features:
 
 * **`age`**: Primary beneficiary age (numerical)
 * **`sex`**: Insurance contractor gender (`female`, `male`)
@@ -23,10 +23,6 @@ The dataset contains **1,338 records** of health insurance beneficiaries with th
 * **`charges`** *(Target)*: Individual medical costs billed by health insurance
 
 ---
-
-## 🛠️ Preprocessing & Feature Engineering
-Standard linear correlations missed crucial non-linear interactions. To capture key medical cost drivers without deep, overfitted tree branches, the following features were engineered:
-
 
 ## 🛠️ Preprocessing & Feature Engineering
 Standard linear correlations missed crucial non-linear interactions. To capture key medical cost drivers without deep, overfitted tree branches, the following features were engineered:
