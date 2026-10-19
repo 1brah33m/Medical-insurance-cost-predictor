@@ -27,9 +27,13 @@ The dataset contains **1,338 records** of health insurance beneficiaries with th
 ## 🛠️ Preprocessing & Feature Engineering
 Standard linear correlations missed crucial non-linear interactions. To capture key medical cost drivers without deep, overfitted tree branches, the following features were engineered:
 
-1. **`is_obese`**: Binary flag indicating $\text{BMI} \ge 30$.
-2. **`obese_smoker`**: Interaction term ($\text{is\_obese} \times \text{is\_smoker}$) capturing the primary exponential cost jump.
-3. **`age_smoker`**: Interaction term ($\text{age} \times \text{is\_smoker}$).
+
+## 🛠️ Preprocessing & Feature Engineering
+Standard linear correlations missed crucial non-linear interactions. To capture key medical cost drivers without deep, overfitted tree branches, the following features were engineered:
+
+1. **`is_obese`**: Binary flag indicating BMI ≥ 30.
+2. **`obese_smoker`**: Interaction term (`is_obese` × `smoker`) capturing the primary exponential cost jump.
+3. **`age_smoker`**: Interaction term (`age` × `smoker`).
 4. **`is_parent`**: Binary indicator derived from `children > 0`.
 
 ### Data Pipeline Configuration
